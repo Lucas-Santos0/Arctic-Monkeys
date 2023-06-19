@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arctic Monkeys || Contato</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="icon" type="img/png" href="fotos/arctic-monkeys-logo.png">
+    <script language="javascript" type="text/javascript">
+        function validar() {
+            var nome = form1.nome.value;
+            var email = form1.email.value;
+            var telefone = form1.telefone.value;
+            var assunto = form1.assunto.value;
+            var comentario = form1.comentario.value;
+
+            if (nome == "") {
+                alert('Por favor, preencha o campo seu Nome!!');
+                form1.nome.focus();
+                return false;
+            }
+
+            if (email == "") {
+                alert('Por favor, preencha o campo com o seu Email!!');
+                form1.email.focus();
+                return false;
+            }
+            if (telefone == "") {
+                alert('Por favor, preencha o campo com o seu Telefone!!');
+                form1.telefone.focus();
+                return false;
+            }
+
+            if (assunto == "") {
+                alert('Por favor, preencha o campo com o Assunto do Motivo do seu Contato!!');
+                form1.assunto.focus();
+                return false;
+            }
+
+            if (comentario == "") {
+                alert('Por favor, preencha o Comentario do Assunto!!');
+                form1.comentario.focus();
+                return false;
+            }
+
+            if (nome.length < 6) {
+                alert('por favor, preencha o campo com seu nome completo!!');
+                form1.nome.focus();
+                return false;
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <div class="menu">
+        <img src="fotos/arctic-monkeys-imagem-simbulo.png" width="10%">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="origem.html">Origem</a></li>
+            <li><a href="obras.html">Obras</a></li>
+            <li><a href="galeria.html">Galeria</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </div>
+    <form name="form1" action="Aviso-contato.html" method="post">
+        <div class="formulario">
+            <hr color="#000000">
+            <h4>Entre em Contato Conosco</h4>
+            <hr color="#000000">
+            <br><br>
+            Nome <input class="item" type="text" name="nome">
+            <br><br>
+            Email <input class="item" type="email" name="email">
+            <br><br>
+            Telefone <input class="item" type="number" name="telefone" placeholder="Ex: 00 00000-0000">
+            <br><br>
+            Assunto <input class="item" type="text" name="assunto">
+            <br><br>
+            <textarea class="item" cols="58" rows="10" name="comentario" placeholder="Obs..."></textarea>
+            <br>
+            <div class="botao">
+                <input class="enviar" type="submit" onclick="return validar()" value="Enviar">
+                <input class="resetar" type="reset" name="limpa" value="Limpar">
+            </div>
+        </div>
+    </form><br><br><br>
+
+    <div class="rodape">
+        <h5> Lucas Santos 2023 - Trabalho Academico Sem Fins Lucrativos - &copyTodos os direitos reservados</h5>
+    </div>
+</body>
+
+</html>

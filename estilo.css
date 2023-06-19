@@ -1,0 +1,349 @@
+* {
+    margin: 0cm;
+    padding: 0cm;
+    font-family: Arial;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/*CONFIGURAÇÃO CORPO*/
+
+body {
+    background-color: rgba(167, 152, 89, 0.718);
+    margin: 3cm 2cm 0cm 2cm;
+}
+
+h4 {
+    font-family: 'Times New Roman';
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: center;
+    margin: 38px 0px 38px 0px;
+}
+
+h2 {
+    font-family: 'Times New Roman';
+    font-style: italic;
+    text-transform: uppercase;
+    margin: 38px 0px 38px 0px;
+}
+
+.esquerda {
+    text-align: left;
+    margin-bottom: 1cm;
+}
+
+.direita {
+    text-align: right;
+    margin-bottom: 1cm;
+}
+
+.imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem img {
+    box-shadow: 5px 5px 30px #000000;
+    height: 600px;
+    width: 600px;
+}
+
+.texto1 {
+    margin: 1cm 0cm 1cm 0cm;
+    display: flex;
+    box-shadow: 5px 5px 30px #000000;
+    text-align: center;
+}
+
+.texto1 img {
+    height: 305px;
+    width: 305px;
+    box-shadow: 5px 5px 30px #000000;
+}
+
+.texto2 {
+    margin: 1cm 0cm 1cm 0cm;
+    display: flex;
+    justify-content: right;
+    box-shadow: 5px 5px 30px #000000;
+    text-align: center;
+}
+
+.texto2 img {
+    height: 300px;
+    width: 300px;
+    box-shadow: 5px 5px 30px #000000;
+}
+
+.texto3 {
+    margin: 0.5cm 10cm 0.5cm 0cm;
+    display: flex;
+    box-shadow: 5px 5px 30px #000000;
+    text-align: center;
+}
+
+.texto3 img {
+    height: 375px;
+    width: 375px;
+    box-shadow: 5px 5px 30px #000000;
+}
+
+.texto4 {
+    margin: 0.5cm 0cm 0.5cm 10cm;
+    display: flex;
+    justify-content: right;
+    box-shadow: 5px 5px 30px #000000;
+    text-align: center;
+}
+
+.texto4 img {
+    height: 375px;
+    width: 375px;
+    box-shadow: 5px 5px 30px #000000;
+}
+
+p {
+    padding: 1cm;
+    font-family: 'Bahnschrift Condensed';
+    text-indent: 35px;
+    text-align: justify;
+    text-transform: uppercase;
+}
+
+.espaco {
+    margin-right: 1cm;
+}
+
+.galeria {
+    display: flex;
+    margin-bottom: 1cm;
+}
+
+.galeria img {
+    margin: 0cm 1cm 0cm 1cm;
+    height: 500px;
+    width: 500px;
+    border-radius: 30px;
+}
+
+a img {
+    border-radius: 10px;
+    position: absolute;
+    display: flex;
+    justify-content: left;
+    width: 4%;
+}
+
+.seta {
+    display: flex;
+    position: fixed;
+    justify-content: right;
+    bottom: 3cm;
+    right: 3cm;
+    left: 0;
+}
+
+.seta img {
+    width: 4%;
+    padding: 5px;
+    background: linear-gradient(#fcedc9, rgb(167, 151, 89));
+    border-radius: 15px;
+    box-shadow: 10px 10px 30px #000000;
+}
+
+.seta3 {
+    display: flex;
+    position: fixed;
+    justify-content: left;
+    bottom: 3cm;
+    left: 3cm;
+    right: 0;
+}
+
+.seta3 img {
+    width: 4%;
+    padding: 5px;
+    background: linear-gradient(#fcedc9, rgb(167, 151, 89));
+    border-radius: 15px;
+    box-shadow: 10px 10px 30px #000000;
+    transform: rotate(-90deg);
+}
+
+.seta2 {
+    display: flex;
+    position: fixed;
+    justify-content: right;
+    bottom: 3cm;
+    right: 3cm;
+    left: 0;
+}
+
+.seta2 img {
+    width: 4%;
+    padding: 5px;
+    background: linear-gradient(#fcedc9, rgb(167, 151, 89));
+    border-radius: 15px;
+    box-shadow: -10px 10px 30px #000000;
+    transform: rotate(90deg);
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    margin: 0cm 10cm 0cm 10cm;
+}
+
+.titulo hr{
+    margin: 0cm 1cm;
+}
+
+.caixa {
+    display:flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.caixa2 {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.caixa hr , .caixa2 hr{
+    height: 50px;
+    margin: 0px 5px;
+}
+
+/*CONFIGURAÇAO DO CABEÇALHO*/
+
+.menu {
+    align-items: center;
+    background-color: #000000;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 7px 9px 0px #00000090;
+    z-index: 5;
+    right: 0;
+    top: 0;
+    left: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.menu li a {
+    font-size: 30px;
+    font-family: 'Bahnschrift Condensed';
+    font-weight: lighter;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 7px 15px;
+    border-radius: 10px;
+    transition: .9s;
+    align-items: center;
+}
+
+.menu li a:hover {
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+}
+
+.menu div {
+    background-color: #ffffff;
+}
+
+.menu img {
+    width: 25%;
+    padding: 0;
+    margin-left: 3cm;
+}
+
+/*CONFIGURAÇÃO FORMULARIO*/
+
+.item {
+    color: rgba(0, 0, 0, 0.718);
+    background-color: rgba(255, 255, 255, 0.699);
+    display: flex;
+    box-shadow: 3px 3px 9px #000000;
+    font-weight: bold;
+    font-size: 17px;
+
+}
+
+form {
+    margin: 1cm 9cm 1cm 9cm;
+    padding: 2cm 1cm 2cm 1cm;
+    background-color: rgba(167, 152, 89, 0.718);
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px 10px #0000008c;
+
+}
+
+.formulario {
+    display: inline;
+    font-size: 25px;
+    text-align: left;
+    font-family: 'Bahnschrift Condensed';
+    font-weight: bold;
+
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+}
+
+.enviar {
+    font-family: 'Bahnschrift Condensed';
+    background-color: rgba(0, 255, 13, 0.5);
+    width: 30%;
+    font-size: 26px;
+    margin: 1cm;
+    align-items: center;
+}
+
+.resetar {
+    font-family: 'Bahnschrift Condensed';
+    background-color: rgba(255, 0, 0, 0.5);
+    width: 30%;
+    margin: 1cm;
+    font-size: 26px;
+}
+
+input {
+    width: 15.5cm;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+textarea {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    resize: none;
+    border-radius: 10px;
+}
+
+/*CONFIGURAÇÃO RODAPE*/
+
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0px;
+    right: 0cm;
+    left: 0cm;
+    padding: 10px;
+    background-color: black;
+    color: #ffffff
+}
