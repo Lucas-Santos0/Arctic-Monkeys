@@ -130,9 +130,10 @@ p {
 }
 
 .galeria img:hover {
-    height: 700px;
-    width: 700px;
-    border-radius: 10px;
+    height: 550px;
+    width: 550px;
+    border-radius: 20px;
+    transition: 2s;
 }
 
 
