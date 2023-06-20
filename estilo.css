@@ -127,15 +127,14 @@ p {
     height: 500px;
     width: 500px;
     border-radius: 30px;
-}
-
-.galeria img:hover {
-    height: 520px;
-    width: 520px;
-    border-radius: 10px;
     transition: 1s;
 }
 
+.galeria img:hover {
+    border-radius: 50px;
+    transition: 1s;
+    transform: scale(1.1);
+}
 
 a img {
     border-radius: 10px;
