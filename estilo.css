@@ -129,6 +129,13 @@ p {
     border-radius: 30px;
 }
 
+.galeria img:hover {
+    height: 700px;
+    width: 700px;
+    border-radius: 10px;
+}
+
+
 a img {
     border-radius: 10px;
     position: absolute;
